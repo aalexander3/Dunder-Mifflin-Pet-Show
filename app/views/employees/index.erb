@@ -1,0 +1,4 @@
+<h1>All the employees that work for Dunder Mifflin 🗄 </h1>
+<% @employees.each do |emp| %>
+  <p><%= link_to emp.full_name, emp %></p>
+<% end %>

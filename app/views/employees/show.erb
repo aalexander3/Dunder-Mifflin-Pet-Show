@@ -1,0 +1,8 @@
+<h1><%= @employee.first_name%>'s Page</h1>
+<marquee><%= @employee.full_name %> 💩</marquee>
+<h4><%= @employee.alias %></h4>
+<h4><%= @employee.title %></h4>
+<h5><%= @employee.office %></h5>
+<h5><%= @employee.dog.name %></h5>
+<img src="<%= @employee.img_url %>" alt="<%= @employee.full_name %>">
+<p><%= link_to "back to all employees", employees_path %></p>

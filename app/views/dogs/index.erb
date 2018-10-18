@@ -1,0 +1,10 @@
+<h1>All the wonderful pups 🐶 </h1>
+
+<% @dogs.each do |dog| %>
+  <p><%= link_to dog.name, dog %></p>
+<% end %>
+
+<%= form_tag dogs_path, method: 'GET' do %>
+  <%= hidden_field_tag :sort %>
+  <%= submit_tag "Sort Dogs" %>
+<% end %>

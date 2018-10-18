@@ -1,0 +1,12 @@
+<h1>The Coolest Dog 😎 </h1>
+<!-- dog info -->
+<p><%= @dog.name %></p>
+<p><%= @dog.age %></p>
+<p><%= @dog.breed %></p>
+
+
+<!-- list the employees and link to them -->
+<h3>My ok employees</h3>
+<% @dog.employees.each do |emp| %>
+  <p><%= link_to emp.full_name, emp %></p>
+<% end %>
